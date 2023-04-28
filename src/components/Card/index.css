@@ -1,0 +1,27 @@
+.corte{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%, 0 80%);
+}
+
+.sombra{
+    -webkit-box-shadow: inset -11px -12px 5px -3px rgba(0,0,0,0.10);
+-moz-box-shadow: inset -11px -12px 5px -3px rgba(0,0,0,0.10);
+box-shadow: inset -11px -12px 5px -3px rgba(0,0,0,0.10);
+}
+
+.floating{
+    transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

@@ -1,0 +1,23 @@
+.header-cut{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 30% 60%, 26% 100%, 0 100%);
+
+}
+.wraper{
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.4));
+}
+.header-wrap{
+    filter: inset(1px 6px 3px rgba(0, 0, 0, 0.5))
+}
+.oval{
+    clip-path: ellipse(50% 38% at 50% 50%);
+}
+.small-oval{
+    clip-path: ellipse(40% 40% at 50% 50%);
+}
+
+@media (max-width: 640px) {
+    .header-cut{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 60% 60%, 50% 100%, 0 100%);
+    
+    }
+}
